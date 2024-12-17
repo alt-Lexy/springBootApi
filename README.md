@@ -22,7 +22,8 @@ public class TestController {
 Utiisation de l'image Docker MariaBD et creation de container avec la cmd docker-compose up -d  
 ![image](https://github.com/user-attachments/assets/329edef1-1da7-4462-9809-f7432f05e8ff)  
 
-Exmple d'un requête POST pour créer un Client qui doit retourner 201  
-![image](https://github.com/user-attachments/assets/b155cfe9-0cc8-44ff-a271-9dd532b24ed7)
+Exmple d'un requête POST pour créer un Client qui doit retourner 201 + vous pouvez vérifier la table Client
+![image](https://github.com/user-attachments/assets/3471bec4-4a1c-4e1b-8f92-41f21af9a190)
+
 
 
