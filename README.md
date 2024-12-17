@@ -5,13 +5,13 @@
 @RestController
 @RequestMapping(path = "test")
 public class TestController {
-    @GetMapping(path = "string")
-    public String getString() {
-        return "chaine de caractère transmise par sa";
-    }
     @GetMapping
     public List<String> getList() {
         return List.of("chaine de caractère","transmise par sa");
+    }
+    @GetMapping(path = "string")
+    public String getString() {
+        return "chaine de caractère transmise par sa";
     }
 }
 ```
