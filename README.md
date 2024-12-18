@@ -24,7 +24,12 @@ Utiisation de l'image Docker MariaBD et creation de container avec la cmd docker
 
 Exmple d'une requête POST pour créer un Client qui doit retourner 201 + vous pouvez vérifier la table Client  
 ![image](https://github.com/user-attachments/assets/8fc42775-717c-436d-bd51-0f0527eb70ee)  
-![image](https://github.com/user-attachments/assets/3471bec4-4a1c-4e1b-8f92-41f21af9a190)
+![image](https://github.com/user-attachments/assets/3471bec4-4a1c-4e1b-8f92-41f21af9a190)  
+
+Exemple d'une requête GET pour récuperer les clients de la table *Client*
+![img.png](img.png)  
+Exemple d'une requête GET pour lire un client  
+![img_1.png](img_1.png)
 
 
 
