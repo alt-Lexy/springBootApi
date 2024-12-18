@@ -18,7 +18,7 @@ public class ClientService {
 
     public void creer(Client client) {
         Client getClient = this.clientRepository.findByEmail(client.getEmail());
-        if(getClient == null) {
+        if (getClient == null) {
             this.clientRepository.save(client);
         }
     }
