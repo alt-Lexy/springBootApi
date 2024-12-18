@@ -22,26 +22,26 @@
 
 >[!NOTE]
 >Exemple d'une requête GET pour récuperer les clients de la table *Client*
-![img.png](img.png)    
+![img.png](img/img.png)    
 
 >[!NOTE]
 >Exemple d'une requête GET pour lire un client dans la table *Client*   
-![img_1.png](img_1.png)  
+![img_1.png](img/img_1.png)  
 
 >[!NOTE]
 >Exemple d'une requête POST pour poster un commentaire dans la table *Rating*  
-![img_4.png](img_4.png)
+![img_4.png](img/img_4.png)
 
 >[!NOTE]
 >Exemple d'une requête GET pour récupérer les commentaires de la table *Rating*  
-![img_3.png](img_3.png)  
+![img_3.png](img/img_3.png)  
 
 >[!NOTE]
 >Exemple d'une requête DELETE pour supprimer un commentaire  
-![img_2.png](img_2.png)  
+![img_2.png](img/img_2.png)  
 Pour verifier faisons un GET, nous avons bien supprimé le commentaire avec l'ID 1
-![img_5.png](img_5.png)  
+![img_5.png](img/img_5.png)  
 
 >[!NOTE]
 >Exemple d'un requête GET après deux requêtes POST qui définit bien le type de commentaire (NEGATIF ou POSITIF) sur le contrôle du mot __pas__  
-> ![img_6.png](img_6.png)
+> ![img_6.png](img/img_6.png)
