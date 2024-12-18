@@ -32,4 +32,12 @@ public class ClientService {
         // replace if() and else null
         return optionalClient.orElse(null);
     }
+
+    public Client lireOuCreer(Client client){
+        Client getClient = this.clientRepository.findByEmail(client.getEmail());
+        if (getClient == null) {
+            this.clientRepository.save(client);
+        }
+        return  getClient;
+    }
 }

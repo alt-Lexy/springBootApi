@@ -28,8 +28,10 @@ Exmple d'une requête POST pour créer un Client qui doit retourner 201 + vous p
 
 Exemple d'une requête GET pour récuperer les clients de la table *Client*
 ![img.png](img.png)  
-Exemple d'une requête GET pour lire un client  
-![img_1.png](img_1.png)
+Exemple d'une requête GET pour lire un client dans la table *Client*   
+![img_1.png](img_1.png)  
+Exemple d'une requête POST pour poster un commentaire dans la table *Rating*  
+![img_2.png](img_2.png)
 
 
 
