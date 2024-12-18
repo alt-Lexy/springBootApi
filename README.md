@@ -45,3 +45,13 @@ Pour verifier faisons un GET, nous avons bien supprimé le commentaire avec l'ID
 >[!NOTE]
 >Exemple d'un requête GET après deux requêtes POST qui définit bien le type de commentaire (NEGATIF ou POSITIF) sur le contrôle du mot __pas__  
 > ![img_6.png](img/img_6.png)
+
+>[!NOTE]
+> Exemple d'une requête GET avec le query parameter *type*  
+> ![img_7.png](img/img_7.png)  
+
+>[!NOTE]
+> Exemple d'une requête PUT avec l'ID 1  
+> ![img_8.png](img/img_8.png)  
+> Nous pouvons vérifier que le client avec l'ID 1 est bien modifier  
+> ![img.png](img/img_9.png)

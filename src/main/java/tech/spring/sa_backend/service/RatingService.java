@@ -33,8 +33,12 @@ public class RatingService {
 
     }
 
-    public List<Rating> rechercher() {
-        return this.ratingRepository.findAll();
+    public List<Rating> rechercher(TypeRating type) {
+        if (type == null) {
+            return  this.ratingRepository.findAll();
+        }
+
+        return this.ratingRepository.findByType(type);
     }
 
     public void supprimer(int id) {

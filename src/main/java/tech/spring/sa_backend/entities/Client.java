@@ -10,14 +10,24 @@ public class Client {
     private int id;
 //    @Column(unique = true)
     private String email;
+    private String telephone;
 
     public Client() {
 
     }
 
-    public Client(int id) {
+    public Client(String telephone, int id, String email) {
+        this.telephone = telephone;
         this.id = id;
         this.email = email;
+    }
+
+    public String getTelephone() {
+        return telephone;
+    }
+
+    public void setTelephone(String telephone) {
+        this.telephone = telephone;
     }
 
     public int getId() {

@@ -4,6 +4,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 import tech.spring.sa_backend.entities.Rating;
+import tech.spring.sa_backend.enums.TypeRating;
 import tech.spring.sa_backend.service.RatingService;
 
 import java.util.List;
@@ -26,8 +27,8 @@ public class RatingController {
     }
 
     @GetMapping
-    public @ResponseBody List<Rating> rechercher() {
-        return this.ratingService.rechercher();
+    public @ResponseBody List<Rating> rechercher(@RequestParam(required = false) TypeRating type) {
+        return this.ratingService.rechercher(type);
     }
 
     @ResponseStatus(HttpStatus.NO_CONTENT)
