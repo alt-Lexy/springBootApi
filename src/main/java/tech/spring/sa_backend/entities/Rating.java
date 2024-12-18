@@ -26,6 +26,30 @@ public class Rating {
         return client;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getComment() {
+        return comment;
+    }
+
+    public void setComment(String comment) {
+        this.comment = comment;
+    }
+
+    public TypeRating getType() {
+        return type;
+    }
+
+    public void setType(TypeRating type) {
+        this.type = type;
+    }
+
     public void setClient(Client client) {
         this.client = client;
     }

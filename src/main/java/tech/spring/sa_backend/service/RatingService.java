@@ -3,7 +3,10 @@ package tech.spring.sa_backend.service;
 import org.springframework.stereotype.Service;
 import tech.spring.sa_backend.entities.Client;
 import tech.spring.sa_backend.entities.Rating;
+import tech.spring.sa_backend.enums.TypeRating;
 import tech.spring.sa_backend.repository.RatingRepository;
+
+import java.util.List;
 
 @Service
 public class RatingService {
@@ -18,6 +21,23 @@ public class RatingService {
     public void creer(Rating rating){
         Client client = this.clientService.lireOuCreer(rating.getClient());
         rating.setClient(client);
+
+        rating.setType(TypeRating.POSITIF);
+
+        if (rating.getComment().contains("pas")) {
+            rating.setType(TypeRating.NEGATIF);
+        }
+
         this.ratingRepository.save(rating);
+
+
+    }
+
+    public List<Rating> rechercher() {
+        return this.ratingRepository.findAll();
+    }
+
+    public void supprimer(int id) {
+        this.ratingRepository.deleteById(id);
     }
 }

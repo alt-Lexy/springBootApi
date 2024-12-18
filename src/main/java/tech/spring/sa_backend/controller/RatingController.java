@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.*;
 import tech.spring.sa_backend.entities.Rating;
 import tech.spring.sa_backend.service.RatingService;
 
+import java.util.List;
+
 import static  org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 
 @RestController
@@ -21,5 +23,16 @@ public class RatingController {
     @PostMapping(consumes = APPLICATION_JSON_VALUE)
     public void creer(@RequestBody Rating rating) {
         this.ratingService.creer(rating);
+    }
+
+    @GetMapping
+    public @ResponseBody List<Rating> rechercher() {
+        return this.ratingService.rechercher();
+    }
+
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    @DeleteMapping(path = "{id}")
+    public void supprimer(@PathVariable int id) {
+        this.ratingService.supprimer(id);
     }
 }
