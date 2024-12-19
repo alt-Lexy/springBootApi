@@ -1,5 +1,6 @@
 package tech.spring.sa_backend.service;
 
+import jakarta.persistence.EntityNotFoundException;
 import org.springframework.stereotype.Service;
 import tech.spring.sa_backend.entities.Client;
 import tech.spring.sa_backend.repository.ClientRepository;
@@ -29,8 +30,11 @@ public class ClientService {
 
     public Client lire(int id) {
         Optional<Client> optionalClient = this.clientRepository.findById(id);
-        // replace if() and else null
-        return optionalClient.orElse(null);
+        // replace if() and else null =>
+        // return optionalClient.orElse(null);
+        return optionalClient.orElseThrow(
+                () -> new EntityNotFoundException("Aucun resultat")
+        );
     }
 
     public Client lireOuCreer(Client client){

@@ -54,4 +54,8 @@ Pour verifier faisons un GET, nous avons bien supprimé le commentaire avec l'ID
 > Exemple d'une requête PUT avec l'ID 1  
 > ![img_8.png](img/img_8.png)  
 > Nous pouvons vérifier que le client avec l'ID 1 est bien modifier  
-> ![img.png](img/img_9.png)
+> ![img.png](img/img_9.png)  
+
+>[!NOTE]
+> Exemple d'une requête GET gérant une exception
+> ![img.png](img/img_10.png)
